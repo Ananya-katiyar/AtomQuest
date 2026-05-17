@@ -1,8 +1,9 @@
 import axios from 'axios'
 
 const API = axios.create({
-  baseURL: 'http://localhost:8000'
+  baseURL: 'https://atomquest-backend-7ocw.onrender.com'  // ← new
 })
+
 
 // attach token to every request automatically
 API.interceptors.request.use((config) => {
